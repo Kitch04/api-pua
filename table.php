@@ -29,7 +29,7 @@ $list = $data['records'];
 				<input class="btn btn-primary" type="submit" name="submit" value="submit">
 		</form>
 		
-		<a href="form_create.php" style="text-decoration: none">
+		<a href="?p=add" style="text-decoration: none">
 			<input class="btn btn-secondary" type="button" value="ADD">
 		</a>
 		
