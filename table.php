@@ -38,7 +38,7 @@ $list = $data['records'];
 			<?php foreach($list as $item) { ?>
 				<tr>
 					<td>
-						<a href="preview.php?id=<?php echo $item['id']?>"><?php echo $item['name'] ?></a>
+						<a href="?p=preview&id=<?php echo $item['id']?>"><?php echo $item['name'] ?></a>
 					</td>
 					<td><?php echo $item['price'] ?></td>
 					<td><?php echo $item['description'] ?></td>
