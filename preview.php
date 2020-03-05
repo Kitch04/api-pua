@@ -9,8 +9,8 @@ $data = json_decode($json, true);
 <link rel="stylesheet" href="style.css">
 
 
-<table class="table table-bordered">
-	<a href="?p=add&id=<?php echo $id ?>"> 
+<table class="table">
+	<a style="text-decoration: none" href="?p=add&id=<?php echo $id ?>"> 
 		<button type="button">Edit</button>
 	</a> | 
 	<form style="display: inline-block" method="post" action="pro_delete.php">
@@ -32,7 +32,7 @@ $data = json_decode($json, true);
 			<td><?php echo $data['price']; ?></td>
 			<td><?php echo $data['category_name']; ?></td>
 		</tr>
-		<tr>
+		<tr colspan="100%" align="center>
 			<td><?php echo $data['description']; ?></td>
 		</tr>
 	</tbody>
