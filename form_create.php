@@ -12,15 +12,15 @@ if ($id) {
 <link rel="stylesheet" href="style.css">
 <div class="container">
 	<form class="" action="pro_create.php" method="POST">
-		<input class="form-control" type="hidden" name="id" value="<?php echo $id ?>" />
-		<input class="form-control" type="text" name="name" value="<?php if($id) echo $data['name']?>" placeholder="name"/>
-		<input class="form-control" type="text" name="description"  value="<?php if($id) echo $data['description']?>" placeholder="description"/>
-		<input class="form-control" type="text" name="price"  value="<?php if($id) echo $data['price']?>" placeholder="price"/>
+		<input class="form-control col-6 mb-3" type="hidden" name="id" value="<?php echo $id ?>" />
+		<input class="form-control col-6 mb-3" type="text" name="name" value="<?php if($id) echo $data['name']?>" placeholder="name"/>
+		<input class="form-control col-6 mb-3" type="text" name="description"  value="<?php if($id) echo $data['description']?>" placeholder="description"/>
+		<input class="form-control col-6 mb-3" type="text" name="price"  value="<?php if($id) echo $data['price']?>" placeholder="price"/>
 		<select name="category" id="" class="form-control">
 			<?php foreach ($categories as $category) { ?>
 				<option value="<?php echo $category['id'] ?>" <?php if ($id && $category['id'] == $data['category_id']) echo "selected" ?>><?php echo $category['name'] ?></option>
 			<?php } ?>
 		</select>
-		<input type="submit" name="submit" value="submit"/>
+		<input class="btn btn-primary" type="submit" name="submit" value="submit"/>
 	</form>
 </div>
