@@ -28,7 +28,7 @@ if(empty($id)) {
   
   curl_close($curl);
   // echo $response;
-  header("location: table.php");
+  header("location: index.php");
 } else {
 	$name = @$_POST['name'];
 	$price = @$_POST['price'];
@@ -57,6 +57,6 @@ if(empty($id)) {
 
 	curl_close($curl);
 	// echo $response;
-	header("location: table.php");
+	header("location: index.php");
 } 
 
