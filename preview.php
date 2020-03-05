@@ -32,8 +32,8 @@ $data = json_decode($json, true);
 			<td><?php echo $data['price']; ?></td>
 			<td><?php echo $data['category_name']; ?></td>
 		</tr>
-		<tr colspan="3" align="center">
-			<td><?php echo $data['description']; ?></td>
+		<tr align="center">
+			<td colspan="3"><?php echo $data['description']; ?></td>
 		</tr>
 	</tbody>
 </table>
