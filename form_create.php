@@ -8,20 +8,19 @@ if ($id) {
 	$data = json_decode($json, true);
 }
 ?>
+
 <link rel="stylesheet" href="style.css">
 <div class="container">
-	<div class="container">
-		<form class="" action="pro_create.php" method="POST">
-			<input type="hidden" name="id" value="<?php echo $id ?>" />
-			<input type="text" name="name" value="<?php if($id) echo $data['name']?>" placeholder="name"/>
-			<input type="text" name="description"  value="<?php if($id) echo $data['description']?>" placeholder="description"/>
-			<input type="text" name="price"  value="<?php if($id) echo $data['price']?>" placeholder="price"/>
-			<select name="category" id="" class="form-control">
-				<?php foreach ($categories as $category) { ?>
-					<option value="<?php echo $category['id'] ?>" <?php if ($id && $category['id'] == $data['category_id']) echo "selected" ?>><?php echo $category['name'] ?></option>
-				<?php } ?>
-			</select>
-			<input type="submit" name="submit" value="submit"/>
-		</form>
-	</div>
+	<form class="" action="pro_create.php" method="POST">
+		<input class="form-control" type="hidden" name="id" value="<?php echo $id ?>" />
+		<input class="form-control" type="text" name="name" value="<?php if($id) echo $data['name']?>" placeholder="name"/>
+		<input class="form-control" type="text" name="description"  value="<?php if($id) echo $data['description']?>" placeholder="description"/>
+		<input class="form-control" type="text" name="price"  value="<?php if($id) echo $data['price']?>" placeholder="price"/>
+		<select name="category" id="" class="form-control">
+			<?php foreach ($categories as $category) { ?>
+				<option value="<?php echo $category['id'] ?>" <?php if ($id && $category['id'] == $data['category_id']) echo "selected" ?>><?php echo $category['name'] ?></option>
+			<?php } ?>
+		</select>
+		<input type="submit" name="submit" value="submit"/>
+	</form>
 </div>
