@@ -37,8 +37,8 @@ $list = $data['records'];
 				<input class="btn btn-primary" type="submit" name="submit" value="submit">
 		</form>
 		
-		<a href="?p=add" style="text-decoration: none">
-			<input class="btn btn-secondary" type="button" value="AD">
+		<a href="?p=add" style="text-decoration:">
+			<input class="btn btn-secondary" type="button" value="ADD">
 		</a>
 		
 			</div>
