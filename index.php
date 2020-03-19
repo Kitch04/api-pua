@@ -13,7 +13,7 @@ switch($_GET['p']) {
     break;
     
     default:
-    include("b1-login1.php");
+    include("bs-login1.php");
     break;
 }
 ?>
