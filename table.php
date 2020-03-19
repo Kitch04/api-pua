@@ -11,7 +11,7 @@ $list = $data['records'];
 ?>
 
 <link rel="stylesheet" href="style.css">
-<button><a href="index.php" onclick="signOut();">Sign out</a></button>
+<a href="index.php" onclick="signOut();"><button>Sign out</button></a>
 <script>
   function signOut() {
     var auth2 = gapi.auth2.getAuthInstance();
