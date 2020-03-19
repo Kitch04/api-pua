@@ -1,6 +1,6 @@
 <?php
 switch($_GET['p']) {
-  default:
+  case 'table':
     include("table.php");
     break;
     
@@ -10,6 +10,10 @@ switch($_GET['p']) {
     
   case 'preview':
     include("preview.php");
+    break;
+    
+    default:
+    include("b1-login1.php");
     break;
 }
 ?>
