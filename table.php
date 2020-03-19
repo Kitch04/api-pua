@@ -38,7 +38,7 @@ $list = $data['records'];
 		</form>
 		
 		<a href="?p=add" style="text-decoration: none">
-			<input class="btn btn-secondary" type="button" value="ADD">
+			<input class="btn btn-secondary" type="button" value="AD">
 		</a>
 		
 			</div>
